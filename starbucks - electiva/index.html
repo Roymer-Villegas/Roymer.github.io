@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Wedsite Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="logo\logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+           <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolores dolor 
+           quidem incidunt consequatur expedita quibusdam reiciendis quisquam natus vero, 
+           recusandae necessitatibus, velit minus? Distinctio quidem dolores explicabo sequi accusamus.</p>
+           <a href="iniciarsesion.html">Eegister now!</a>
+        </div>
+        <div class="imgBox">
+           <img src="imagenes/img1.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="imagenes\thumb1.png" onclick="imgSlider('imagenes/img1.png');chageCircleColor('#017143')"></li>
+        <li><img src="imagenes\thumb2.png" onclick="imgSlider('imagenes/img2.png');chageCircleColor('#eb7495')"></li>
+        <li><img src="imagenes\thumb3.png" onclick="imgSlider('imagenes/img3.png');chageCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="https://www.facebook.com/StarbucksColombia/" target="_blank"><img src="logo\facebook.png"></a></li>
+        <li><a href="https://www.instagram.com/starbuckscol/?hl=es" target="_blank"><img src="logo\twitter.png"></a></li>
+        <li><a href="https://twitter.com/starbuckscol" target="_blank"><img src="logo\instagram.png"></a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+    }
+
+    function chageCircleColor(Color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = Color; 
+    }
+</script>
+</body>
+</html>
